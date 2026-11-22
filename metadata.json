@@ -1,0 +1,16 @@
+{
+  "name": "g-locks",
+  "description": "Minimal, native lock-key status indicators and OSD notifications for Caps Lock and Num Lock.",
+  "uuid": "g-locks@george-ezat.github.io",
+  "shell-version": [
+    "47",
+    "48",
+    "49",
+    "50",
+    "51"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.glocks",
+  "gettext-domain": "glocks",
+  "version": 1,
+  "url": "https://github.com/george-ezat/g-locks"
+}

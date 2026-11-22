@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="glocks">
+  <enum id="org.gnome.shell.extensions.glocks.VisibilityMode">
+    <value nick="never" value="0"/>
+    <value nick="when-active" value="1"/>
+    <value nick="always" value="2"/>
+  </enum>
+
+  <enum id="org.gnome.shell.extensions.glocks.NotificationMode">
+    <value nick="off" value="0"/>
+    <value nick="compact" value="1"/>
+    <value nick="osd" value="2"/>
+  </enum>
+
+  <enum id="org.gnome.shell.extensions.glocks.PanelPosition">
+    <value nick="left" value="0"/>
+    <value nick="center" value="1"/>
+    <value nick="right" value="2"/>
+  </enum>
+
+  <schema id="org.gnome.shell.extensions.glocks" path="/org/gnome/shell/extensions/glocks/">
+    <!-- Caps Lock -->
+    <key name="capslock-enabled" type="b">
+      <default>true</default>
+      <summary>Track Caps Lock</summary>
+      <description>Master switch for Caps Lock indicator and notifications.</description>
+    </key>
+    <key name="capslock-visibility" enum="org.gnome.shell.extensions.glocks.VisibilityMode">
+      <default>'when-active'</default>
+      <summary>Caps Lock panel visibility</summary>
+      <description>Controls when the Caps Lock badge appears in the top bar.</description>
+    </key>
+    <key name="capslock-notification" enum="org.gnome.shell.extensions.glocks.NotificationMode">
+      <default>'osd'</default>
+      <summary>Caps Lock notification style</summary>
+      <description>Notification style shown when Caps Lock toggles.</description>
+    </key>
+
+    <!-- Num Lock -->
+    <key name="numlock-enabled" type="b">
+      <default>true</default>
+      <summary>Track Num Lock</summary>
+      <description>Master switch for Num Lock indicator and notifications.</description>
+    </key>
+    <key name="numlock-visibility" enum="org.gnome.shell.extensions.glocks.VisibilityMode">
+      <default>'when-active'</default>
+      <summary>Num Lock panel visibility</summary>
+      <description>Controls when the Num Lock badge appears in the top bar.</description>
+    </key>
+    <key name="numlock-notification" enum="org.gnome.shell.extensions.glocks.NotificationMode">
+      <default>'osd'</default>
+      <summary>Num Lock notification style</summary>
+      <description>Notification style shown when Num Lock toggles.</description>
+    </key>
+
+    <!-- Panel -->
+    <key name="panel-position" enum="org.gnome.shell.extensions.glocks.PanelPosition">
+      <default>'right'</default>
+      <summary>Top bar position</summary>
+      <description>Where the indicator is placed in the GNOME top bar.</description>
+    </key>
+  </schema>
+</schemalist>

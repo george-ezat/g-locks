@@ -1,0 +1,15 @@
+.glocks-box {
+    spacing: 2px;
+}
+
+.glocks-badge {
+    padding: 2px 3px;
+    margin: 0;
+    background-color: transparent;
+    transition-duration: 140ms;
+}
+
+.glocks-icon {
+    icon-size: 18px;
+    padding: 0;
+}

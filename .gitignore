@@ -1,0 +1,5 @@
+# Packaged extension files
+*.zip
+
+# Compiled GSettings binary
+schemas/gschemas.compiled
